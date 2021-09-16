@@ -29,7 +29,7 @@ func load_settings():
 
 func _on_PlayButton_pressed():
 	# Change to the next main scene
-	if get_tree().change_scene("res://scenes/level.tscn") != OK:
+	if get_tree().change_scene("res://scenes/employee_select.tscn") != OK:
 		print("An unexpected error occured when trying to switch to LEVEL scene!")
 
 

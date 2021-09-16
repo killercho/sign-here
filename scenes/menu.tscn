@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/FreePixel.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://scripts/menus/menu.gd" type="Script" id=2]
+[ext_resource path="res://scripts/menu.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -153,7 +153,6 @@ text = "Fullscreen"
 [node name="Music" type="AudioStreamPlayer" parent="."]
 pause_mode = 2
 autoplay = true
-bus = "Music"
 
 [connection signal="pressed" from="MainMenuPanel/PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="MainMenuPanel/OptionsButton" to="." method="_on_OptionsButton_pressed"]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/employee_select.gd" type="Script" id=1]
+[ext_resource path="res://scenes/employee_card.tscn" type="PackedScene" id=2]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+employee_card_scene = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="GridContainer" parent="Control"]
+custom_constants/vseparation = 16
+custom_constants/hseparation = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
