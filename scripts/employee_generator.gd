@@ -14,10 +14,23 @@ const SALARY_MULTIPLIER = 100
 var rng = RandomNumberGenerator.new()
 
 func generate_name():
-	# Todo - Get names randomly from file
-	var f_name = "John"
-	var l_name = "Doe"
-	return f_name + " " + l_name
+	var names_file = File.new()
+	var err = names_file.open("res://resources/names.txt", File.READ)
+	if err != OK:
+		printerr("Could not open names_file, error code: ", err)
+	var names_text = names_file.get_as_text()
+	var names_arr = names_text.split('\n', true, 1)
+	names_file.close()
+	
+	var chosen_name = floor(rng.randf_range(0, int(names_arr[0])))
+	print(rng.randf_range(0, int(names_arr[0])))
+	
+	var full_name = names_arr[1].split('\n', true, 1)
+	var i = 0
+	while i < chosen_name:
+		full_name = full_name[1].split('\n', true, 1)
+		i += 1
+	return full_name[0]
 	
 func generate_age():
 	return rng.randi_range(MIN_AGE, MAX_AGE)
