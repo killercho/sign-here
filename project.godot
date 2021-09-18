@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Employee",
+"language": "GDScript",
+"path": "res://scripts/employee.gd"
+} ]
+_global_script_class_icons={
+"Employee": ""
+}
+
 [application]
 
 config/name="Sign Here"

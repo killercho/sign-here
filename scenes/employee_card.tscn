@@ -22,6 +22,8 @@ margin_right = 227.0
 margin_bottom = 83.0
 
 [node name="Picture" type="TextureRect" parent="Split"]
+margin_right = 64.0
+margin_bottom = 76.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -30,6 +32,7 @@ __meta__ = {
 [node name="Info" type="VBoxContainer" parent="Split"]
 margin_left = 68.0
 margin_right = 220.0
+margin_bottom = 76.0
 
 [node name="Name" type="Label" parent="Split/Info"]
 margin_right = 152.0
