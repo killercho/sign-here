@@ -18,10 +18,22 @@ _global_script_classes=[ {
 "class": "EmployeeGenerator",
 "language": "GDScript",
 "path": "res://scripts/employee_generator.gd"
+}, {
+"base": "Resource",
+"class": "Trait",
+"language": "GDScript",
+"path": "res://scripts/trait.gd"
+}, {
+"base": "Resource",
+"class": "TraitResource",
+"language": "GDScript",
+"path": "res://scripts/trait_resource.gd"
 } ]
 _global_script_class_icons={
 "Employee": "",
-"EmployeeGenerator": ""
+"EmployeeGenerator": "",
+"Trait": "",
+"TraitResource": ""
 }
 
 [application]
