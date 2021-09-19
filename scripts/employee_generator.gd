@@ -47,8 +47,13 @@ func generate_monthly_salary(experience):
 	return int((float(experience) / float(MAX_EXPERIENCE)) * (MAX_SALARY - MIN_SALARY) + MIN_SALARY) * SALARY_MULTIPLIER
 
 func generate_trait():
-	var trait_index = rng.randi_range(0, trait_resource.traits.size() - 1)
-	return trait_resource.traits[trait_index]
+	var trait: Trait
+	if rng.randf_range(0, 1) < 0.7:
+		trait = null
+	else:
+		var trait_index = rng.randi_range(0, trait_resource.traits.size() - 1)
+		trait = trait_resource.traits[trait_index]
+	return trait
 
 func new_employee():
 	rng.randomize()
