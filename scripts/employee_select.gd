@@ -9,6 +9,8 @@ func _ready():
 	$Control/VBoxContainer.add_child(employee_card_scene.instance())
 	$Control/VBoxContainer.add_child(employee_card_scene.instance())
 	$Control/VBoxContainer.add_child(employee_card_scene.instance())
+	$Control/VBoxContainer.add_child(employee_card_scene.instance())
+	$Control/VBoxContainer.add_child(employee_card_scene.instance())
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
